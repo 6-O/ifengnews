@@ -1,0 +1,14 @@
+<!--components/BaseNewsItemVideo.wxml-->
+<navigator url="../../pages/detail/detail?aid={{newsInfo.id}}">
+	<view class="newsItem">
+		<view class="newsItemTitle">{{newsInfo.title}}</view>
+		<view class="newsItemPreview" style="{{'background-image: url(' + newsInfo.thumbnail + ')'}}">
+			<image class="newsItemPreviewIcon" src="/img/play-icon.png"></image>
+		</view>
+		<view class="newsItemFooter">
+			<view class="newsItemFooterSource">{{newsInfo.phvideo.channelName}}</view>
+			<image class="newsItemFooterCommentIcon" src="/img/comment.jpg"></image>
+			<text class="newsItemFooterCommentNum">{{newsInfo.comments}}</text>
+		</view>
+	</view>
+</navigator>

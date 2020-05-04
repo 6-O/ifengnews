@@ -1,0 +1,11 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "top-nav": "../../components/BaseTopNav",
+    "newstop-swiper": "../../components/IndexNewsTop/IndexNewsTopSwiper",
+    "newstop-video": "../../components/IndexNewsTop/IndexNewsTopVideo",
+    "newsitem-left": "../../components/BaseNewsItem/BaseNewsItemLeft",
+    "newsitem-triple": "../../components/BaseNewsItem/BaseNewsItemTriple",
+    "newsitem-video": "../../components/BaseNewsItem/BaseNewsItemVideo"
+  }
+}

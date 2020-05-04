@@ -1,0 +1,34 @@
+<!--pages/detail.wxml-->
+<view class="header">
+	<view class="headerTitle">{{detailInfo.title}}</view>
+	<view class="source">{{source}}</view>
+	<view class="time">{{time}}</view>
+</view>
+<video class="video" wx:if="{{detailInfo.type=='video'}}" src="{{detailInfo.videoFiles[0].mediaUrl}}"></video>
+<rich-text wx:elif="{{detailInfo.type=='doc'}}" nodes="{{artical}}"></rich-text>
+<block wx:elif="{{detailInfo.type=='slide'}}">
+	<view class="slide--p" wx:for="{{slides}}" wx:key="index">
+		<image src="{{item.image}}" class="slide--img"></image>{{item.description}}
+	</view>
+</block>
+<view class="comments">
+	<view class="commentsHeder">
+		<text class="commentsHeaderLeft">最新评论</text>
+		<text class="commentsHeaderRight" wx:if="{{comments.length>3}}" bindtap="commentsFoldTrigger">{{commentsFold?"展开":"收起"}}</text>
+	</view>
+	<view class="noComment" wx:if="{{comments.length==0}}">暂无评论</view>
+	<comment-item class="commentItem" wx:for="{{commentsList}}" wx:key="uuid" commentInfo="{{item}}"></comment-item>
+</view>
+<view class="recommend">
+	<view class="recommendHeader">精彩推荐</view>
+	<news-item wx:for="{{recommendList}}" wx:key="index" newsInfo="{{item}}"></news-item>
+	<view class="noRecommend" wx:if="{{recommendList.length==0}}">{{noRecommendTips}}</view>
+</view>
+<view class="bottomBar" bindtap="tapBottomBar">
+	<view data-to="news" class="bottomBarItem">
+		<image class="bottomBarImg" src="../../img/Group@2x.png"></image>新闻
+	</view>
+	<view data-to="video" class="bottomBarItem">
+		<image class="bottomBarImg" src="../../img/Group10@2x.png"></image>视频
+	</view>
+</view>

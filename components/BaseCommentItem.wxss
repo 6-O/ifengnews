@@ -1,0 +1,35 @@
+/* components/BaseCommentItem.wxss */
+.comment {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding: 30rpx 30rpx 0rpx 30rpx;
+  border-bottom: 1rpx solid #CCCCCC;
+}
+
+.commentLeft {
+  width: 98rpx;
+  margin-right: 30rpx;
+  text-align: center;
+}
+
+.userImg {
+  width: 66rpx;
+  height: 66rpx;
+  border-radius: 40rpx;
+}
+
+.commentRight {
+  flex: 1;
+  line-height: 40rpx;
+}
+
+.username {
+  font-size: 26rpx;
+  margin-bottom: 40rpx;
+}
+
+.commentContent {
+  font-size: 30rpx;
+  margin-bottom: 34rpx;
+}

@@ -1,0 +1,10 @@
+<!--components/IndexNewsTop/IndexNewsTopSwiper.wxml-->
+<swiper class="topSwiper" autoplay="true" circular="true" duration="500" indicatorActiveColor="#f54343" indicatorDots="true" interval="3000">
+	<navigator url="../../pages/detail/detail?aid={{item.id}}" wx:for="{{swiperItems}}" wx:key="index">
+		<swiper-item>
+			<image class="topSwiperImg" src="{{item.thumbnail}}"></image>
+			<image class="topSwiperBottomImg" src="/img/up.png"></image>
+			<text class="topSwiperTitle">{{item.title}}</text>
+		</swiper-item>
+	</navigator>
+</swiper>

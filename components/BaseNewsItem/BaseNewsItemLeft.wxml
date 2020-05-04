@@ -1,0 +1,12 @@
+<!--components/BaseNewsItem.wxml-->
+<navigator url="../../pages/detail/detail?aid={{newsInfo.id}}">
+	<view class="newsItem">
+		<image class="newsItemImg" src="{{newsInfo.thumbnail}}"></image>
+		<view class="newsItemRight">
+			<view class="newsItemTitle">{{newsInfo.title}}</view>
+			<text class="newsItemSource">{{newsInfo.source}}</text>
+			<image class="newsItemIcon" src="/img/comment.jpg"></image>
+			<text class="newsItemComments">{{newsInfo.comments}}</text>
+		</view>
+	</view>
+</navigator>

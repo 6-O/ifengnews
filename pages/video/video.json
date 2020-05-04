@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "top-nav": "../../components/BaseTopNav",
+    "video-item": "../../components/BaseVideoItem"
+  }
+}

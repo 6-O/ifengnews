@@ -1,0 +1,16 @@
+<!--components/BaseVideoItem.wxml-->
+<view class="videoItem">
+	<navigator url="/pages/detail/detail?aid={{videoInfo.id}}">
+		<view class="videoPreview">
+			<image class="videoPreviewImg" src="{{videoInfo.image}}"></image>
+			<text class="videoTitle">{{videoInfo.title}}</text>
+			<image class="iconPlay" src="/img/play-icon.png"></image>
+			<image class="bottomImg" src="/img/jianbian.png"></image>
+		</view>
+	</navigator>
+	<view class="itemFooter">
+		<text class="videoSource">{{videoInfo.source}}</text>
+		<image class="iconComment" src="/img/comment.jpg"></image>
+		<text class="commentsNum">{{videoInfo.comments}}</text>
+	</view>
+</view>

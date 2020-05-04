@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="index">
+	<top-nav bindchangeCategory="changeCategory" topNavItems="{{topNavItems}}" nowChannel="{{nowChannel}}"></top-nav>
+	<view>
+		<newstop-swiper wx:if="{{swiperItems.length}}" swiperItems="{{swiperItems}}"></newstop-swiper>
+		<newstop-video wx:if="{{newsTop.length}}" newsTop="{{newsTop[0]}}"></newstop-video>
+	</view>
+	<view wx:for="{{newsList}}" wx:key="index">
+		<newsitem-left wx:if="{{item.type=='doc'}}" newsInfo="{{item}}"></newsitem-left>
+		<newsitem-video wx:elif="{{item.type=='phvideo'}}" newsInfo="{{item}}"></newsitem-video>
+		<!-- <newsitem-triple wx:elif="{{item.type=='slide'}}" newsInfo="{{item}}"></newsitem-triple> -->
+	</view>
+</view>

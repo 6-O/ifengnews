@@ -1,0 +1,6 @@
+<!--pages/video/video.wxml-->
+<view class="video">
+<top-nav bindchangeCategory="changeCategory" topNavItems="{{topNavItems}}" nowChannel="{{nowChannel}}"></top-nav>
+<video-item wx:for="{{videosList}}" wx:key="index" videoInfo="{{item}}"></video-item>
+</view>
+

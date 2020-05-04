@@ -1,0 +1,10 @@
+<!--components/BaseCommentItem.wxml-->
+<view class="comment">
+	<view class="commentLeft">
+		<image class="userImg" src="{{commentInfo.faceurl}}"></image>
+	</view>
+	<view class="commentRight">
+		<view class="username">{{commentInfo.uname}}</view>
+		<view class="commentContent">{{commentInfo.comment_contents}}</view>
+	</view>
+</view>

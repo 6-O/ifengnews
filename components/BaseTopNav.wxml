@@ -1,0 +1,6 @@
+<!--components/BaseTopNav.wxml-->
+<view class="baseTopNav">
+<block wx:for="{{topNavItems}}" wx:key="num">
+<view bindtap="changeCategory" class="baseTopNav--item {{item.id==nowChannel?'selected':''}}" data-item="{{item}}">{{item.text}}</view>
+</block>
+</view>

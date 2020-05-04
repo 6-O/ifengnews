@@ -1,0 +1,27 @@
+/* components/BaseTopNav.wxss */
+.baseTopNav {
+  z-index: 10;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 73rpx;
+  background: #f7f7f7;
+  line-height: 69rpx;
+}
+
+.baseTopNav--item {
+  box-sizing: border-box;
+  flex: 1;
+  height: 73rpx;
+  border-bottom: 2px solid transparent;
+  color: #5c5c5c;
+  text-align: center;
+}
+
+.selected {
+  color: #f54545;
+  border-bottom: 2px solid #f54545;
+}

@@ -1,0 +1,14 @@
+<!--components/IndexNewsTop/IndexNewsTopVideo.wxml-->
+<navigator url="../../pages/detail/detail?aid={{newsTop.guid}}">
+	<view class="topVideo">
+		<view class="topVideoTitle">{{newsTop.title}}</view>
+		<view class="topVideoPreview" style="{{'background-image: url(' + newsTop.thumbnail + ')'}}">
+			<image class="topVideoPreviewIcon" src="/img/play-icon.png"></image>
+		</view>
+		<view class="topVideoFooter">
+			<view class="topVideoFooterSource">{{newsTop.source}}</view>
+			<image class="topVideoFooterCommentIcon" src="/img/comment.jpg"></image>
+			<text class="topVideoFooterCommentNum">{{newsTop.comments}}</text>
+		</view>
+	</view>
+</navigator>

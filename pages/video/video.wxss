@@ -1,0 +1,4 @@
+/* pages/video/video.wxss */
+.video {
+  padding-top: 73rpx;
+}
